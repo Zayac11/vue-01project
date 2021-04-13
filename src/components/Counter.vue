@@ -4,7 +4,7 @@
             Введите количество продуктов:
         </div>
         <button v-on:click="decrementFunction">-</button>
-        <input type="number" @input="numberInput($event.target.value)" v-model="count">
+        <input type="number" @input="numberInput($event.target.value)" :min="1" :max="10" :value="count">
         <button v-on:click="incrementFunction">+</button>
 
     </div>
